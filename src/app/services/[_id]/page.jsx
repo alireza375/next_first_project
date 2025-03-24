@@ -1,7 +1,6 @@
-import Link from 'next/link'
 import React from 'react'
 
-export default function page() {
+export default function ServiceDetailsPage({params}) {
     const data = [
         {
             "_id": "1a2b3c4d5e",
@@ -34,23 +33,16 @@ export default function page() {
             "service_description": "Custom mobile app development for Android and iOS platforms."
         }
     ]
-          
+
+    const id = params._id; 
+
+    const singleData = data.find((item) => item._id === id);
   return (
-    <div>
-      <p className='text-3xl font-bold'>This is Services page</p>
-      <div  className='flex'>
-        {
-            data.map((item) => (
-                <div key={item._id} className='bg-slate-300 p-2 rounded-2xl m-2'>
-                    <Link href={`/services/${item._id}`}>
-                        <img src={item.service_image} alt={item.service_name} />
-                    </Link>
-                    <h1>{item.service_name}</h1>
-                    <p>{item.service_description}</p>
-                </div>
-            ))
-        }
-      </div>
-    </div>
+        <div>
+            <h1>Service Details Page</h1>
+            <p>ID: {id}</p>
+            <img src={singleData.service_image} alt="Service" />
+            <p>Service Name: {singleData.service_name}</p>
+        </div>
   )
 }
