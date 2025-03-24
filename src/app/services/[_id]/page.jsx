@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 export default function ServiceDetailsPage({params}) {
@@ -34,15 +35,20 @@ export default function ServiceDetailsPage({params}) {
         }
     ]
 
-    const id = params._id; 
+    const id = params?._id; 
+
 
     const singleData = data.find((item) => item._id === id);
   return (
-        <div>
+        <div className=''>
             <h1>Service Details Page</h1>
             <p>ID: {id}</p>
             <img src={singleData.service_image} alt="Service" />
             <p>Service Name: {singleData.service_name}</p>
+
+            <div>
+                <Link className='font-bold bg-amber-300 rounded-2xl p-2' href={'/services'}>Back to Services</Link>
+            </div>
         </div>
   )
 }
