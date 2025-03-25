@@ -1,8 +1,11 @@
 {
   "/(authPages)/login/page": "app/(authPages)/login/page.js",
   "/(authPages)/register/page": "app/(authPages)/register/page.js",
+  "/(dashboard)/admin-dashboard/page": "app/(dashboard)/admin-dashboard/page.js",
+  "/(dashboard)/user-dashboard/page": "app/(dashboard)/user-dashboard/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/about/page": "app/about/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js",
   "/services/[_id]/page": "app/services/[_id]/page.js",
   "/services/page": "app/services/page.js"

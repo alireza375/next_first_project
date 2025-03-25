@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://D%3A/Frontend/NextJS/next_first_project/src/app/%28dashboard%29/layout.jsx"],"sourcesContent":["import React from 'react'\r\n\r\nexport default function DashboardLayout({ children }) {\r\n  return (\r\n    <div>\r\n        <div className='grid grid-cols-12'>\r\n            {/* Sidebar */}\r\n            <div className='col-span-3 bg-slate-300'>\r\n                <ul>\r\n                    <li>User List</li>\r\n                    <li>Service</li>\r\n                    <li>Blog</li>\r\n                </ul>\r\n\r\n            </div>\r\n        {/* Dashboard content */}\r\n            <div className='col-span-9'>\r\n                {children}\r\n            </div>\r\n        </div>\r\n    </div>\r\n  )\r\n}\r\n"],"names":[],"mappings":";;;;AAAA;;;AAEe,SAAS,gBAAgB,EAAE,QAAQ,EAAE;IAClD,qBACE,8OAAC;kBACG,cAAA,8OAAC;YAAI,WAAU;;8BAEX,8OAAC;oBAAI,WAAU;8BACX,cAAA,8OAAC;;0CACG,8OAAC;0CAAG;;;;;;0CACJ,8OAAC;0CAAG;;;;;;0CACJ,8OAAC;0CAAG;;;;;;;;;;;;;;;;;8BAKZ,8OAAC;oBAAI,WAAU;8BACV;;;;;;;;;;;;;;;;;AAKjB","debugId":null}}]
+}
