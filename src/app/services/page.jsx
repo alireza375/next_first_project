@@ -36,14 +36,14 @@ export default function page() {
     ]
           
   return (
-    <div>
+    <div className='container mx-auto'>
       <p className='text-3xl font-bold'>This is Services page</p>
-      <div  className='flex'>
+      <div  className='flex '>
         {
             data.map((item) => (
                 <div key={item._id} className='bg-slate-300 p-2 rounded-2xl m-2'>
                     <Link href={`/services/${item._id}`}>
-                        <img src={item.service_image} alt={item.service_name} />
+                        <img className='rounded-2xl' src={item.service_image} alt={item.service_name} />
                     </Link>
                     <h1>{item.service_name}</h1>
                     <p>{item.service_description}</p>
@@ -54,3 +54,7 @@ export default function page() {
     </div>
   )
 }
+
+
+
+

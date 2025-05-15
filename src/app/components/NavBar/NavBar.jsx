@@ -14,6 +14,7 @@ export default function NavBar() {
               <Link href={'/'}>Home</Link>
               <Link href={'/about'}>About</Link>
               <Link href={'/services'}>Services</Link>
+              <Link href={'/cities'}>Cities</Link>
               {/* <li>Home</li>
               <li>About</li>
               <li>Services</li> */}

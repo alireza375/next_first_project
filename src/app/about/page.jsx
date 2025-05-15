@@ -18,7 +18,7 @@ export default function page() {
   }
 
   return (
-    <div>
+    <div className='container mx-auto'>
       <p className='text-3xl font-bold'>This is About page</p>
       {/* <Link href={'/about/address'}>Address</Link> */}
       <button className='font-bold bg-amber-300 rounded-2xl p-2' type='button' onClick={handleNavigation}>Address</button>
