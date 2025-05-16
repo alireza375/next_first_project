@@ -1,4 +1,6 @@
 {
+  "/(site)/properties/page": "app/(site)/properties/page.js",
   "/cities/page": "app/cities/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/services/page": "app/services/page.js"
 }

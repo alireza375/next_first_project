@@ -8,13 +8,14 @@ export default function NavBar() {
   console.log(pathname);
   if ( !pathname.includes('dashboard') ) {
     return (
-      <div>
-          <nav className='flex justify-center'>
+      <div className='container mx-auto pt-10 w-full '>
+          <nav className='flex justify-center '>
             <ul className='flex justify-between gap-6'>
-              <Link href={'/'}>Home</Link>
-              <Link href={'/about'}>About</Link>
-              <Link href={'/services'}>Services</Link>
-              <Link href={'/cities'}>Cities</Link>
+              <Link className='font-bold bg-amber-200 rounded-sm px-4 py-2'  href={'/'}>Home</Link>
+              <Link className='font-bold bg-amber-200 rounded-sm px-4 py-2' href={'/about'}>About</Link>
+              <Link className='font-bold bg-amber-200 rounded-sm px-4 py-2' href={'/services'}>Services</Link>
+              <Link className='font-bold bg-amber-200 rounded-sm px-4 py-2' href={'/cities'}>Cities</Link>
+              <Link className='font-bold bg-amber-200 rounded-sm px-4 py-2' href={'/properties'}>Properties</Link>
               {/* <li>Home</li>
               <li>About</li>
               <li>Services</li> */}
