@@ -1,13 +1,13 @@
 import PropertyCard from '@/app/components/common/property-card'
+import SelectCProperty from '@/app/components/home/selectProperty'
 import React from 'react'
 
 export default function page() {
   return (
     <div className='container mx-auto'> 
        <div className='pt-10 '>
-        <p className='text-3xl font-bold'>This is Properties Page</p>
-        {/* <selectProperty /> */}
-        <PropertyCard/>
+        <SelectCProperty />
+        {/* <PropertyCard /> */}
        </div>
     </div>
   )

@@ -25,10 +25,10 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NavBar />
-        <main className="h-screen h-max-[800px]">
+        <main className="container mx-auto w-full ">
           {children}
         </main>
-        <footer className="text-center bg-slate-300">
+        <footer className="text-center bg-slate-300 my-10 h-[75px]">
           Awesome NextJS Project
         </footer>
       </body>

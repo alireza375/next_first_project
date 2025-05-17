@@ -2,14 +2,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { CiLocationOn } from "react-icons/ci";
+import { CiLocationOn, CiSquareAlert} from "react-icons/ci";
+import { TbBed, TbBath} from "react-icons/tb";
 
 
-
-
-
-
-const PropertyCard = ({  }) => {
+const PropertyCard = ({ data }) => {
  const properties = [
     {  
         "_id": "For sale",
@@ -46,51 +43,129 @@ const PropertyCard = ({  }) => {
             "baths": 4,
             "area": "1200"
         }
-    }
+    },
+      {
+      _id: "4",
+      image: "/images/city6.jpg",
+      price: 255000,
+      title: "Mountain View Cabin",
+      address: "8127 Sunset Blvd",
+      details: {
+        beds: 4,
+        baths: 2,
+        area: "1350",
+      },
+    },
  ]
+return (
 
-
-  return (
-    <div className="px-5 grid grid-cols-3 gap-4">
-        {properties.map((item, index) => (
-            <div key={index} className="w-[475px] h-[570px] rounded-2xl border border-gray-300 overflow-hidden p-3">
-                <Link href={item?.link || "#"} className="block w-full h-[400px] relative mb-2">
-                    <Image
-                    src={item?.image ?? "/defaultimg.png"}
-                    alt={item?.title ?? "Property"}
-                    width={424}
-                    height={404}
-                    className="object-cover w-full h-full rounded-2xl"
-                    />
+    <div className="center mx-auto w-full ">
+        <div className="relative w-full max-w-[425px] rounded-2xl border-2 border-gray-300 overflow-hidden p-2 hover:shadow-xl transition-shadow duration-300">
+            <div className="absolute top-5 left-5 text-[#4cac40] bg-white  text-sm px-3 py-1 rounded-xl z-10 hover:bg-[#4cac40] hover:text-white">
+                {"For rent" || "For sale"}
+            </div>
+            <Link
+            href={data?.link || "#"}
+            className="block w-full h-[280px] sm:h-[350px] relative mb-2"
+            >
+            <Image
+            src={data?.image ?? "/defaultimg.png"}
+            alt={data?.title ?? "Property"}
+            width={424}
+            height={350}
+            className="object-cover w-full h-full rounded-2xl"
+            />
+                
+            </Link>
+            <div className="absolute bottom-25 flex justify-between items-center px-2 py-2 h-[153px] rounded-b-2xl">
+                <Link
+                    href="#"
+                    className="relative flex items-center gap-2 bg-white/20 backdrop-blur-sm text-sm font-medium text-white px-4 py-2 rounded-full hover:bg-white/30 transition hover:text-[#4cac40] duration-300"
+                >
+                    Read more
+                    <span className="flex items-center justify-center w-8 h-8 text-black bg-white rounded-full text-xl hover:text-white duration-300 hover:bg-[#4cac40]">
+                    →
+                    </span>
                 </Link>
 
-                <div className="px-4 rounded-2xl bg-[#ebfffd] pt-6 pb-2">
-                    <h2 className="text-2xl font-semibold text-textMain truncate mb-2">
-                    {item?.title}
-                    </h2>
+                <div className="pl-18 text-lg font-semibold text-white hover:text-[#4cac40] duration-300">
+                    ${data?.price.toFixed(2)}
+                </div>
+            </div>
 
-                    <p className="text-lg text-textMain/70 truncate mb-3">
-                    <CiLocationOn className="inline-block mr-2 text-textMain" />
-                    {item?.address}
-                    </p>
 
-                    <div className="grid grid-cols-3 text-sm font-medium text-textMain gap-2 m-2">
-                        <div className="flex items-center gap-2">
-                            🛏 {item?.details?.beds} beds
-                        </div>
-                        <div className="flex items-center gap-2">
-                            🛁 {item?.details?.baths} baths
-                        </div>
-                        <div className="flex items-center gap-2">
-                            📐 {item?.details?.area} sqft
-                        </div>
+
+            <div className="bg-[#ebfffd] px-3 py-3 rounded-2xl">
+                <h2 className="text-xl font-semibold truncate mb-3 flex items-center">
+                {data?.title}
+                </h2>
+
+                <p className="text-base text-textMain/70 truncate mb-4 flex items-center">
+                <CiLocationOn className="mr-2 text-lg" />
+                {data?.address}
+                </p>
+
+                <div className="grid grid-cols-3 text-sm font-medium text-textMain gap-2 ">
+                    <div className="flex items-center gap-1">
+                        <TbBed className="mr-2 text-lg" />
+                        {data?.details?.beds} Beds
+                    </div>
+                    <div className="flex items-center gap-1">
+                        <TbBath className="mr-2 text-lg" />
+                        {data?.details?.baths} Baths
+                    </div>
+                    <div className="flex items-center gap-1">
+                        <CiSquareAlert className="mr-2 text-lg" />
+                        {data?.details?.area} sqft
                     </div>
                 </div>
             </div>
-        ))}
+        </div>
     </div>
-
+    
   );
+
+//   return (
+//     <div className="px-5 grid grid-cols-3 gap-4">
+//         {properties.map((item, index) => (
+//             <div key={index} className="w-[475px] h-[570px] rounded-2xl border border-gray-300 overflow-hidden p-3">
+//                 <Link href={item?.link || "#"} className="block w-full h-[400px] relative mb-2">
+//                     <Image
+//                     src={item?.image ?? "/defaultimg.png"}
+//                     alt={item?.title ?? "Property"}
+//                     width={424}
+//                     height={404}
+//                     className="object-cover w-full h-full rounded-2xl"
+//                     />
+//                 </Link>
+
+//                 <div className="px-4 rounded-2xl bg-[#ebfffd] pt-6 pb-2">
+//                     <h2 className="text-2xl font-semibold text-textMain truncate mb-2">
+//                     {data?.title}
+//                     </h2>
+
+//                     <p className="text-lg text-textMain/70 truncate mb-3">
+//                     <CiLocationOn className="inline-block mr-2 text-textMain" />
+//                     {item?.address}
+//                     </p>
+
+//                     <div className="grid grid-cols-3 text-sm font-medium text-textMain gap-2 m-2">
+//                         <div className="flex items-center gap-2">
+//                             🛏 {item?.details?.beds} beds
+//                         </div>
+//                         <div className="flex items-center gap-2">
+//                             🛁 {item?.details?.baths} baths
+//                         </div>
+//                         <div className="flex items-center gap-2">
+//                             📐 {item?.details?.area} sqft
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+//         ))}
+//     </div>
+
+//   );
 };
 
 export default PropertyCard;
