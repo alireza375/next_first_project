@@ -1,6 +1,6 @@
 {
   "/(site)/services/page": "app/(site)/services/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
+  "/cities/page": "app/cities/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js"
 }

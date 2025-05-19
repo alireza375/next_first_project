@@ -6,31 +6,8 @@ import { CiLocationOn, CiSquareAlert} from "react-icons/ci";
 
 
 const ServiceCard = ({ data }) => {
-//  const services = [
-//     {  
-//         _id: "1",
-//         image: "/images/icon4.png",
-//         title: "Seaside Serenity Hill House",
-//         description: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        
-//     },
-//        {  
-//         _id: "2",
-//         image: "/images/icon5.png",
-//         title: "Seaside Serenity Hill House",
-//         description: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        
-//     },
-//     {
-//       _id: "3",
-//       image: "/images/icon6.png",
-//       title: "Mountain View Cabin",
-//       description: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-//     },
-//  ]
+
 return (
-
-
     <div className="flex p-4 w-full mt-4">
         <div className="flex flex-col p-3 w-full max-w-[400px] overflow-hidden transition-shadow duration-300 hover:shadow-xl rounded-2xl">
             <Link href={data?.link || "#"} className="block w-full mb-2">
