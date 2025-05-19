@@ -13,9 +13,9 @@ export default function NavBar() {
             <ul className='flex justify-between gap-6'>
               <Link className='font-bold bg-amber-200 rounded-sm px-4 py-2'  href={'/'}>Home</Link>
               <Link className='font-bold bg-amber-200 rounded-sm px-4 py-2' href={'/about'}>About</Link>
-              <Link className='font-bold bg-amber-200 rounded-sm px-4 py-2' href={'/services'}>Services</Link>
               <Link className='font-bold bg-amber-200 rounded-sm px-4 py-2' href={'/cities'}>Cities</Link>
               <Link className='font-bold bg-amber-200 rounded-sm px-4 py-2' href={'/properties'}>Properties</Link>
+              <Link className='font-bold bg-amber-200 rounded-sm px-4 py-2' href={'/services'}>Service</Link>
               {/* <li>Home</li>
               <li>About</li>
               <li>Services</li> */}

@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import SwiperCore, { Navigation, Pagination } from "swiper/modules";
 import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 
 import "swiper/css";
@@ -12,9 +11,6 @@ import "swiper/css/pagination";
 import { Empty } from "antd";
 import BasicBar from "../common/basicbar";
 import PropertyCard from "../common/property-card";
-
-// ✅ Register Swiper modules
-// SwiperCore.use([Navigation, Pagination]);
 
 const SelectProperty = () => {
   const swiperRef = useRef(null);

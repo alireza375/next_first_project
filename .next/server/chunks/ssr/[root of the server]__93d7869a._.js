@@ -80,8 +80,8 @@ function NavBar() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             className: "font-bold bg-amber-200 rounded-sm px-4 py-2",
-                            href: '/services',
-                            children: "Services"
+                            href: '/cities',
+                            children: "Cities"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/NavBar/NavBar.jsx",
                             lineNumber: 16,
@@ -89,8 +89,8 @@ function NavBar() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             className: "font-bold bg-amber-200 rounded-sm px-4 py-2",
-                            href: '/cities',
-                            children: "Cities"
+                            href: '/properties',
+                            children: "Properties"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/NavBar/NavBar.jsx",
                             lineNumber: 17,
@@ -98,8 +98,8 @@ function NavBar() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             className: "font-bold bg-amber-200 rounded-sm px-4 py-2",
-                            href: '/properties',
-                            children: "Properties"
+                            href: '/services',
+                            children: "Service"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/NavBar/NavBar.jsx",
                             lineNumber: 18,

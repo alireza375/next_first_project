@@ -1,4 +1,3 @@
-import PropertyCard from '@/app/components/common/property-card'
 import SelectCProperty from '@/app/components/home/selectProperty'
 import React from 'react'
 
