@@ -12,7 +12,7 @@ export default function NavBar() {
   const pathname = usePathname();
 
   const subLists = [
-    { title: "Blog", link: "/blog" },
+    { title: "Work", link: "/work" },
     { title: "About", link: "/about" },
     { title: "Gallery", link: "/gallery" },
     { title: "Contact", link: "/contact" },

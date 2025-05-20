@@ -87,7 +87,7 @@ const Footer = () => {
            <form className="bg-white rounded-lg relative">
               <div className="mb-4">
                 <input
-                  className="shadow appearance-none border w-full h-[50px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow appearance-none border-lg w-full h-[50px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="email"
                   type="text"
                   placeholder="example@gmail.com"
