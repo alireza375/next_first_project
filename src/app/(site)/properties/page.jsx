@@ -4,13 +4,11 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div className='container mx-auto'> 
        <div className='pt-10 '>
         <Banner title={"Properties"}/>
         <SelectCProperty />
         {/* <PropertyCard /> */}
        </div>
-    </div>
   )
 }
 

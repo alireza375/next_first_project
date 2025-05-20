@@ -22,7 +22,7 @@ export default function NavBar() {
 
   if ( !pathname.includes('dashboard') ) {
     return (
-      <div className='container mx-auto pt-10 w-full '>
+      <div className='mx-auto py-8 w-full shadow-xl'>
           <nav className='flex justify-center relative'>
             <ul className='flex justify-between gap-6 '>
               <Link className='font-bold bg-amber-200 rounded-sm px-4 py-2 hover:bg-[#4cac40] hover:text-white'  href={'/'}>Home</Link>

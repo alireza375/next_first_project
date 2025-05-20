@@ -6,15 +6,15 @@ const Banner = ({ title }) => {
   return (
      <div
       style={{
-        backgroundImage: "url('/images/city1.jpg')",
+        backgroundImage: "url('/images/banner.png')",
         backgroundSize: "cover",
       }}
-      className=" min-h-fit sm:h-[200px]  lg:h-[258px] h-[130px] work-sans text-white mb-10"
+      className="min-h-fit sm:h-[150px]  lg:h-[200px] h-[150px] work-sans text-black mb-10 shadow-xl"
     >
-      <div className="bg-black bg-opacity-[50%] h-full ">
-        <div className="flex flex-col justify-center h-full text-center font-openSans">
+      <div className="container mx-auto flex">
+        <div className="flex flex-col font-openSans justify-center items-start pl-10 pt-8">
           <h2 className="header-1 md:text-[40px] text-[30px] font-semibold">{(title)}</h2>
-          <p className="text-[16px] flex justify-center gap-2 font-medium md:text-lg md:mt-2">
+          <p className="text-[16px] flex gap-2 font-medium md:text-lg md:mt-2">
             <Link href="/">
               {('Home')} <span className=" text-primary">/</span>
             </Link>{" "}

@@ -5,7 +5,7 @@ import Banner from '@/app/components/common/banner'
 
 export default function page() {
   return (
-    <div className='container mx-auto'> 
+    <div className='mx-auto'> 
        <div className='pt-10 '>
         <Banner title={"Services"}/>
         <SelectService />

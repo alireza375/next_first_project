@@ -12,15 +12,13 @@ const SelectService = () => {
         image: "/images/icon6.png",
         title: "Seaside Serenity Hill House",
         description: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        
-    },
-       {  
+      },
+    {  
         _id: "2",
         image: "/images/icon6.png",
         title: "Seaside Serenity Hill House",
         description: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        
-    },
+      },
     {
       _id: "3",
       image: "/images/icon6.png",
