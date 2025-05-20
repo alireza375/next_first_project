@@ -70,15 +70,6 @@ function NavBar() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             className: "font-bold bg-amber-200 rounded-sm px-4 py-2 hover:bg-[#4cac40] hover:text-white",
-                            href: '/about',
-                            children: "About"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/components/layout/NavBar.jsx",
-                            lineNumber: 29,
-                            columnNumber: 15
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            className: "font-bold bg-amber-200 rounded-sm px-4 py-2 hover:bg-[#4cac40] hover:text-white",
                             href: '/cities',
                             children: "Cities"
                         }, void 0, false, {
@@ -123,10 +114,10 @@ function NavBar() {
                             columnNumber: 14
                         }, this),
                         showMenu && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "absolute right-0 top-0  bg-white  shadow-md mt-2 rounded w-48 z-50 ",
+                            className: "lg:hidden absolute lg:left-4 bg-gray-700 lg:!text-[#2b2b2b] h-[200px] overflow-y-auto  text-white font-lora rounded-lg z-50 p-3 hide-scrollbar",
                             children: subLists.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     href: item.link,
-                                    className: "block px-4 py-2 hover:bg-gray-100 text-sm",
+                                    className: "lg:px-4 lg:py-2 py-[2px] hover:bg-gray-200 leading-[25px] text-sm",
                                     children: item.title
                                 }, index, false, {
                                     fileName: "[project]/src/app/components/layout/NavBar.jsx",
