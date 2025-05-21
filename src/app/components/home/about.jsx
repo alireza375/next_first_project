@@ -34,54 +34,55 @@ const AboutPage = () => {
     <div className="container py-16 mx-auto">
       <div className="flex flex-col justify-between gap-4 md:flex-row">
 
-        {/* <div className="hidden md:flex flex-col">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="overflow-hidden rounded-2xl">
+        <div className="md:flex flex-col w-1/2">
+          <div className="grid grid-cols-2 gap-6 p-2">
+              <div className='flex w-[500px]'>
                 <Image
-                    src="/images/image1.png"
-                    alt="about image 1"
-                    width={450}
-                    height={270}
-                    className="rounded-2xl object-cover w-full h-full"
+                  src={about[0].image1}
+                  alt="Image 1"
+                  width={500}
+                  height={270}
+                  className="object-cover rounded-xl"
                 />
-                </div>
+              </div>
+              <div className='flex justify-end'>
+                <Image
+                  src={about[0].image2}
+                  alt="Image 2"
+                  width={228}
+                  height={270}
+                  className="object-cover rounded-lg"
+                />
+              </div>
+          </div>
 
-                <div className="overflow-hidden rounded-2xl">
-                <Image
-                    src="/images/image2.png"
-                    alt="about image 2"
-                    width={208}
-                    height={270}
-                    className="rounded-2xl object-cover w-full h-full"
-                />
-                </div>
+          <div className="flex gap-6 mt-4 ">
+            <div className='flex flex-col'>
+              <Image
+                src={about[0].image3}
+                alt="Image 3"
+                width={380}
+                height={270}
+                className="object-cover rounded-xl"
+              />
             </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-                <div className="md:col-span-2 overflow-hidden rounded-2xl">
-                <Image
-                    src="/images/image3.png"
-                    alt="about image 3"
-                    width={364}
-                    height={430}
-                    className="rounded-2xl object-cover w-full h-full"
-                />
-                </div>
-
-                <div className="overflow-hidden rounded-2xl">
-                <Image
-                    src="/images/image4.png"
-                    alt="about image 4"
-                    width={300}
-                    height={340}
-                    className="rounded-2xl object-cover w-full h-full"
-                />
-                </div>
+            <div className='flex flex-cols justify-end'>
+              <Image
+                src={about[0].image4}
+                alt="Image 4"
+                width={355}
+                height={270}
+                className="h-[200px] object-cover rounded-lg"
+              />
             </div>
-        </div>  */}
+          </div>
+        </div> 
 
-        <div className='flex-1 flex-col mt-10' >
-          <h2 className="mb-8 text-5xl font-bold leading-tight text-gray-900">
+        <div className='flex-1 flex-col w-1/2 pl-4 justify-between pt-20'
+          backgroundImage={ 'url("/images/Bg.png")' }
+          backgroundSize="cover"
+        >
+          <h2 className="mb-8 font-bold leading-tight text-gray-900">
             {(about.heading)}
           </h2>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">

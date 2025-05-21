@@ -1,6 +1,7 @@
 {
   "/(site)/about/page": "app/(site)/about/page.js",
+  "/(site)/cities/page": "app/(site)/cities/page.js",
   "/(site)/services/page": "app/(site)/services/page.js",
-  "/(site)/work/page": "app/(site)/work/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js"
 }

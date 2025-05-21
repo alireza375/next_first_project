@@ -35,7 +35,7 @@ const SelectService = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="mx-auto text-center">
+      <div className="mx-auto text-center mt-10">
         <BasicBar
           title="Agent Provide service to help"
           description="Realtors offer expert assistance in navigating the real estate market, finding the right property within your budget. They also handle negotiations and paperwork, ensuring a smooth buying or selling process."

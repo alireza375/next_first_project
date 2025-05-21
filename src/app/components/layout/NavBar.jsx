@@ -36,16 +36,16 @@ export default function NavBar() {
                 onClick={() => setShowMenu(!showMenu)}
               >
                 More <IoIosArrowDown className="inline ml-2" />
-
+      
               </button>
 
               {showMenu && (
-                <div className="lg:hidden absolute lg:left-4 bg-gray-700 lg:!text-[#2b2b2b] h-[200px] overflow-y-auto  text-white font-lora rounded-lg z-50 p-3 hide-scrollbar">
+                <div className="absolute right-0 top-0  bg-white  shadow-md mt-2 rounded w-48 z-50 ">
                   {subLists.map((item, index) => (
                     <Link
                       key={index}
                       href={item.link}
-                      className="lg:px-4 lg:py-2 py-[2px] hover:bg-gray-200 leading-[25px] text-sm"
+                      className="block px-4 py-2 hover:bg-gray-100 text-sm"
                     >
                       {item.title}
                     </Link>
